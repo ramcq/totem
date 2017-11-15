@@ -387,8 +387,9 @@ thumb_app_setup_play (ThumbApp *app)
 	GstElement *audio_sink, *video_sink;
 	GstRegistry *registry;
         const char *blacklisted_plugins[] = {
+          "bmcdec",
           "vaapi",
-          "bmcdec"
+          "video4linux2"
         };
         guint i;
 
